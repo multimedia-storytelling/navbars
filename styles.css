@@ -1,0 +1,168 @@
+/* ==========================================================================
+  Styling Bootstrap navbar with multiple colors and right arrows
+
+
+   ========================================================================== */
+
+
+body {
+  font-size: 21px;
+  /* Scale origin */
+  font-family: 'Lora', serif;
+  line-height: 1.3;
+  font-weight: 400;
+  /* color: rgba(0, 0, 0, 1);*/
+  color: #212121;
+}
+
+
+/* navbar styles */
+
+.navbar {
+  padding: 0;
+  border-bottom: 1px solid black;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+.nav-item-gray {
+  background-color: #AAAAAA;
+  margin-left: 20px;
+  transform: skew(-0.1deg);
+  height: 40px;
+
+}
+
+.nav-item-gray::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #AAAAAA;
+	border-width: 20px;
+	margin-top: -20px;
+  background-color: #08415C;
+}
+
+.nav-item-blue {
+  background-color: #08415C;
+  transform: skew(-0.1deg);
+  margin-left: 20px;
+  height: 40px;
+
+}
+
+
+
+.nav-item-blue::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #08415C;
+	border-width: 20px;
+	margin-top: -20px;
+  background-color: #407A67;
+
+}
+
+.nav-item-blue-end {
+  background-color: #08415C;
+  transform: skew(-0.1deg);
+  margin-left: 20px;
+  height: 40px;
+
+}
+
+.nav-item-blue-end::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #08415C;
+	border-width: 20px;
+	margin-top: -20px;
+}
+
+.nav-item-green {
+  background-color: #407A67;
+  transform: skew(-0.1deg);
+  margin-left: 20px;
+  height: 40px;
+
+}
+
+.nav-item-green::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #407A67;
+	border-width: 20px;
+	margin-top: -20px;
+  background-color: #AAAAAA;
+}
+
+
+.nav-item-works::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 4rem;
+}
+
+ .img-fluid {max-width: 100%;
+ height: auto;}
+
+
+.container-fluid {
+  padding: 0 0;
+}
+
+
+
+
+
+
+/* use media queries, as necessary, for specifying responsive sizes  */
+
+@media only screen and (max-width: 767px) {
+
+
+}
